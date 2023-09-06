@@ -1,22 +1,22 @@
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Globalization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Planner
 {
     public partial class Form1 : Form
     {
-        public Form2 form2;
+        public int currentIndex = -1;
+        private Form2 form2;
         public string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "PlannerNoter save file");
         public Form1()
         {
             InitializeComponent();
 
             this.Load += Label_OnLoad;
-            if (form2 == null)
-            {
-                form2 = new Form2(this);
-            }
+
 
             if (!Directory.Exists(folderPath))
             {
@@ -143,6 +143,10 @@ namespace Planner
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            if (form2 == null)
+            {
+                form2 = new Form2(this);
+            }
             form2.Show();
         }
 
@@ -217,6 +221,80 @@ namespace Planner
             DateTime firstDayOfMonth = new DateTime(date.Year, date.Month, 1);
             int week = (date.Day + (int)firstDayOfMonth.DayOfWeek - 1) / 7 + 1;
             return week;
+        }
+
+        private void Right(object sender, EventArgs e)
+        {
+            string[] files = Directory.GetFiles(folderPath);
+            
+            if (currentIndex < files.Length - 1)
+            {
+                currentIndex++;
+            }
+            string content = File.ReadAllText(files[currentIndex]);
+            string[] parts = content.Split(new[] { "Notes: ", "Study: ", "Gain: " }, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length >= 3)
+            {
+                string notes = parts[0];
+                string study = parts[1];
+                string gain = parts[2];
+                // removes the white space
+                notes = notes.Trim();
+                study = study.Trim();
+                gain = gain.Trim();
+
+                // formatting study and gain strings into arrays of each string
+                string[] studyStrings = study.Split('\n');
+                string[] gainStrings = gain.Split('\n');
+
+
+                // updating each element
+                setDaysStudy(studyStrings);
+                setDaysGain(gainStrings);
+                if (form2 != null)
+                {
+                    form2.setNotes(notes);
+                }
+            }
+
+        }
+
+        private void Left(object sender, EventArgs e)
+        {
+            string[] files = Directory.GetFiles(folderPath);
+            if (currentIndex > 0)
+            {
+                currentIndex--;
+            }
+            else
+            {
+                currentIndex = 0;
+            }
+            string content = File.ReadAllText(files[currentIndex]);
+            string[] parts = content.Split(new[] { "Notes: ", "Study: ", "Gain: " }, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length >= 3)
+            {
+                string notes = parts[0];
+                string study = parts[1];
+                string gain = parts[2];
+                // removes the white space
+                notes = notes.Trim();
+                study = study.Trim();
+                gain = gain.Trim();
+
+                // formatting study and gain strings into arrays of each string
+                string[] studyStrings = study.Split('\n');
+                string[] gainStrings = gain.Split('\n');
+
+
+                // updating each element
+                setDaysStudy(studyStrings);
+                setDaysGain(gainStrings);
+                if (form2 != null)
+                {
+                    form2.setNotes(notes);
+                }
+            }
         }
     }
 }

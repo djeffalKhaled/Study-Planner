@@ -18,3 +18,23 @@ C:\Users\LENOVO\source\repos\Planner\Planner\obj\Debug\net7.0-windows\ref\Planne
 C:\Users\LENOVO\source\repos\Planner\Planner\obj\Debug\net7.0-windows\Planner.Properties.Resources.resources
 C:\Users\LENOVO\source\repos\Planner\Planner\obj\Debug\net7.0-windows\Planner.Form2.resources
 C:\Users\LENOVO\source\repos\Planner\Planner\obj\Debug\net7.0-windows\Planner.Form3.resources
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\bin\Debug\net7.0-windows\Planner.exe
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\bin\Debug\net7.0-windows\Planner.deps.json
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\bin\Debug\net7.0-windows\Planner.runtimeconfig.json
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\bin\Debug\net7.0-windows\Planner.dll
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\bin\Debug\net7.0-windows\Planner.pdb
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.Form1.resources
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.Form2.resources
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.Form3.resources
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.dll
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\refint\Planner.dll
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.pdb
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\Planner.genruntimeconfig.cache
+C:\Users\LENOVO\source\repos\Study-Planner Github\Planner\obj\Debug\net7.0-windows\ref\Planner.dll
